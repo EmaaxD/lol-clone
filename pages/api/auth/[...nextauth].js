@@ -15,7 +15,7 @@ const options = {
     }),
     // ...add more providers here
   ],
-  secret: process.env.SECRET,
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 export default (req, res) => NextAuth(req, res, options);
